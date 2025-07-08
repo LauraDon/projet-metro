@@ -143,13 +143,18 @@ MetroCity/
 - Node.js 16+ avec npm
 - Git
 
+
 ### 1. Clonage du projet
 ```bash
 git clone <repository-url>
 cd projet-metro
 ```
 
-### 2. Configuration Backend
+### 2. Ajout de stop_times.txt
+En raison du poids du fichier, il n'était pas possible de l'ajouter sur GitHub. Ainsi, il faut le rajouter manuellement dans ./backend/data/gtfs.
+Voici le lien où trouver le fichier : [Lien pour le fichier](https://efrei365net-my.sharepoint.com/:f:/g/personal/youssef_ait-el-mahjoub_efrei_fr/EizKQSdL9f9Ip53NBEH6KIMBPtdQ4dAKhoLaFE-LzdSwVA?e=rom6aO)
+
+### 3. Configuration Backend
 ```bash
 cd backend
 python -m venv venv
@@ -157,13 +162,13 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Configuration Frontend
+### 4. Configuration Frontend
 ```bash
 cd frontend
 npm install
 ```
 
-### 4. Variables d'environnement (Optionnel)
+### 5. Variables d'environnement (Optionnel)
 Créer un fichier `.env` dans le dossier backend :
 ```env
 # Développement
@@ -178,7 +183,7 @@ SECRET_KEY=secure-production-key
 CORS_ORIGINS=https://your-domain.com
 ```
 
-### 5. Démarrage des services
+### 6. Démarrage des services
 
 **Backend** (Terminal 1) :
 ```bash
